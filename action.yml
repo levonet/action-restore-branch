@@ -1,0 +1,6 @@
+---
+name: Restore Branch
+description: If the branch has been removed, the action will restore the branch.
+runs:
+  using: node12
+  main: dist/index.js
