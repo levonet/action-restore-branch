@@ -1,8 +1,9 @@
 const core = require('@actions/core')
-const { run, cleanup } = require('./lib/action')
+const { run, cleanup, isPost, setPost } = require('./lib/action')
 
 console.log(process.env)
-if (!process.env['STATE_isPost']) {
+if (!isPost(core)) {
+    setPost(core)
     run(core)
 } else {
     cleanup(core)
