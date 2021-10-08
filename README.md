@@ -1,4 +1,5 @@
 # GitHub Action: Restore Branch
+[![test](https://github.com/levonet/action-restore-branch/actions/workflows/test.yml/badge.svg)](https://github.com/levonet/action-restore-branch/actions/workflows/test.yml)
 
 If the branch has been removed, the action will restore the branch.
 This Github Action is used with the workflow trigger when a pull request has been `closed`.

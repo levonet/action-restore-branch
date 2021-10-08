@@ -2,7 +2,7 @@
 name: Restore Branch
 description: |
   If the branch has been removed, the action will restore the branch.
-  This Github Action is used with the workflow trigger when a pull request has been `closed`.
+  Branch restoring may be temporary.
 inputs:
   github_token:
     description: >
