@@ -17,8 +17,11 @@ inputs:
     description: The commit SHA that triggered the workflow run.
     default: ${{ github.event.pull_request.head.sha }}
   get_back:
-    description: Return the branch after the end of job to the state in which it was before.
+    description: |
+      Return the branch after the end of job to the state in which it was before.
+      That is, if the branch was removed before the start of the action, then after the end of the job it will be removed again.
     default: false
 runs:
   using: node12
   main: dist/index.js
+  post: dist/index.js
