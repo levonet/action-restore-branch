@@ -22,6 +22,11 @@ inputs:
       That is, if the branch was removed before the start of the action,
       then after the end of the job it will be removed again.
     default: false
+  event_page_limit:
+    description: >
+      Maximum number of Github Event pages to find out the status of the branch.
+      Zero does not limit.
+    default: 100
 runs:
   using: node12
   main: dist/index.js
