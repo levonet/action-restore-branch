@@ -54,13 +54,6 @@ then after the end of the job it will be removed again.
 
 Default: `false`
 
-### `event_page_limit`
-
-Maximum number of Github Event pages to find out the status of the branch.
-Zero does not limit.
-
-Default: `100`
-
 ## License
 
 The scripts and documentation in this project are released under the [MIT License](LICENSE)
